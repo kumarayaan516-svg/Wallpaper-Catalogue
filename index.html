@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelier Wallcoverings — Collection Sample Book</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-mark">A</div>
+  <div class="loading-text">Opening the sample book…</div>
+</div>
+
+<header class="site-bar">
+  <span class="site-bar__mark">Atelier Wallcoverings</span>
+  <span class="site-bar__hint"><span class="hint-desktop">Click a corner or use the arrows to turn pages</span><span class="hint-mobile">Swipe to turn pages</span></span>
+</header>
+
+<main class="stage">
+  <div id="book" class="book"><!-- pages injected by js/app.js --></div>
+
+  <div class="controls">
+    <button id="prevBtn" class="controls__btn" aria-label="Previous page">‹</button>
+    <span id="pageIndicator" class="controls__indicator">1 / 21</span>
+    <button id="nextBtn" class="controls__btn" aria-label="Next page">›</button>
+  </div>
+</main>
+
+<!-- page-flip.js — free, MIT licensed, no watermark, no subscription -->
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script src="js/catalogue-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
